@@ -18,7 +18,13 @@ El Conversor de Monedas es una herramienta útil para viajeros, inversores y cua
 :construction: Proyecto en construcción :construction:
 </h4>
 
-:file_folder: Acceso al proyecto.
+<h2>:file_folder: Acceso al proyecto.</h2>
+
+1. Clona este repositorio en tu máquina local.
+2. Instala la biblioteca Gson según las instrucciones proporcionadas en el enlace anterior.
+3. Abre el proyecto en tu IDE preferido.
+4. Ejecuta la aplicación desde la clase principal Principal.java.
+5. Sigue las instrucciones en la interfaz de usuario para realizar conversiones de moneda.
 
 *[Tecnologías utilizadas](#tecnologías-utilizadas)
 
