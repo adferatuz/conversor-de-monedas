@@ -1,5 +1,9 @@
 package com.adferatuz.conversorDeMonedas.funcionalidaes;
 
+import com.adferatuz.conversorDeMonedas.modelos.ConversionDeMoneda;
+
+import java.util.Map;
+
 public class MenuDeOpciones {
     public String elegirOpcion(int opcion){
         String opcionElegida;
@@ -30,5 +34,19 @@ public class MenuDeOpciones {
                 
                 ****************************************                
                 """);
+    }
+
+    public void resultadoTasaCambio(String opcionElegida,
+                                      double valorAingresar,
+                                      String opcionDeMonedaACambiar,
+                                      ConversionDeMoneda conversion)
+    {
+        String mensaje;
+        for (Map.Entry<String, Double> entry2 : conversion.getConversionRates().entrySet()) {
+            if (entry2.getKey().equals(opcionDeMonedaACambiar)) {
+                System.out.println("los [$"+valorAingresar+"] ["+opcionElegida+"] "+
+                        "equivalen a [$"+valorAingresar * entry2.getValue()+"] ["+opcionDeMonedaACambiar+"]");
+            }
+        }
     }
 }

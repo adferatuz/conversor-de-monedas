@@ -27,27 +27,57 @@ public class Principal {
                 MonedaConvertida monedaConvertida = consultar.convertirMoneda(opcionElegida);
                 ConversionDeMoneda conversion = new ConversionDeMoneda(monedaConvertida);
 
-                System.out.println("Valores de conversionRates:");
+                if (opcion == 7){
+                    System.out.println("Gracias por haber usado la aplicación; Hasta pronto 😊");
+                    break;
+                } else if (opcion > 7) {
+                    System.out.println("Opcion incorrecta; Por favor digita nuevamente la opcion a elegir:");
+                    continue;
+                }
+
                 for (Map.Entry<String, Double> entry : conversion.getConversionRates().entrySet()) {
-                    if (opcion == 1 || opcion == 3 || opcion == 5){
+                    if (opcion == 1 ){
                         System.out.println("Digite el valor en ["+opcionElegida+"]:");
                         valorAingresar = lectura.nextDouble();
-                        if (opcion == 1){
-                            opcionDeMonedaACambiar = "ars".toUpperCase();
-                            for (Map.Entry<String, Double> entry2 : conversion.getConversionRates().entrySet()) {
-                                if (entry2.getKey().equals(opcionDeMonedaACambiar)) {
-
-                                    System.out.println("Esta es la moneda ["+opcionDeMonedaACambiar+"] "+
-                                            "y su valor actual en base al ["+opcionElegida+"] "+
-                                            "es de: "+entry2.getValue()+"\ny el valor de la operacion es de: "+
-                                            valorAingresar * entry2.getValue());
-                                }
-
-                            }
-                        }
-
+                        opcionDeMonedaACambiar = "ars".toUpperCase();
+                        menuDeOpciones.resultadoTasaCambio(opcionElegida,valorAingresar,opcionDeMonedaACambiar,conversion);
+                        break;
+                    }else if (opcion == 2){
+                        System.out.println("Digite el valor en ["+opcionElegida+"]:");
+                        valorAingresar = lectura.nextDouble();
+                        opcionDeMonedaACambiar = "usd".toUpperCase();
+                        menuDeOpciones.resultadoTasaCambio(opcionElegida,valorAingresar,opcionDeMonedaACambiar,conversion);
+                        break;
+                    }else if (opcion == 3){
+                        System.out.println("Digite el valor en ["+opcionElegida+"]:");
+                        valorAingresar = lectura.nextDouble();
+                        opcionDeMonedaACambiar = "cop".toUpperCase();
+                        menuDeOpciones.resultadoTasaCambio(opcionElegida,valorAingresar,opcionDeMonedaACambiar,conversion);
+                        break;
+                    }else if (opcion == 4){
+                        System.out.println("Digite el valor en ["+opcionElegida+"]:");
+                        valorAingresar = lectura.nextDouble();
+                        opcionDeMonedaACambiar = "usd".toUpperCase();
+                        menuDeOpciones.resultadoTasaCambio(opcionElegida,valorAingresar,opcionDeMonedaACambiar,conversion);
+                        break;
+                    }else if (opcion == 5){
+                        System.out.println("Digite el valor en ["+opcionElegida+"]:");
+                        valorAingresar = lectura.nextDouble();
+                        opcionDeMonedaACambiar = "brl".toUpperCase();
+                        menuDeOpciones.resultadoTasaCambio(opcionElegida,valorAingresar,opcionDeMonedaACambiar,conversion);
+                        break;
+                    }else if (opcion == 6){
+                        System.out.println("Digite el valor en ["+opcionElegida+"]:");
+                        valorAingresar = lectura.nextDouble();
+                        opcionDeMonedaACambiar = "usd".toUpperCase();
+                        menuDeOpciones.resultadoTasaCambio(opcionElegida,valorAingresar,opcionDeMonedaACambiar,conversion);
+                        break;
+                    }else {
+                        System.out.println("Has ingresado una opcion incorrecta; Por favor ingresa nuevamente la "+
+                                "opcion que deseas elegir:");
+                        break;
                     }
-                    //System.out.println("\n"+entry.getKey() + ": " + entry.getValue());
+
                 }
 
             }catch (Exception e){
