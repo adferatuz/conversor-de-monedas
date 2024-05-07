@@ -2,7 +2,9 @@
 
 *[Índice](#índice)
 
-*[Descripción del proyecto]( Conversor de Monedas.
+<h2 align="center">
+Descripcion del proyecto.
+</h2>
 
 El proyecto Conversor de Monedas es una aplicación de línea de comandos diseñada para facilitar la conversión de diferentes monedas utilizando las tasas de cambio actuales. La aplicación permite a los usuarios ingresar el monto en una moneda determinada y seleccionar la moneda de destino para realizar la conversión.
 
