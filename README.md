@@ -1,6 +1,6 @@
 <h1 align="center"> CONVERSOR DE MONEDAS </h1>
 
-<h2 align="center">
+<h2>
 Descripcion del proyecto.
 </h2>
 
@@ -26,12 +26,11 @@ El Conversor de Monedas es una herramienta útil para viajeros, inversores y cua
 4. Ejecuta la aplicación desde la clase principal Principal.java.
 5. Sigue las instrucciones en la interfaz de usuario para realizar conversiones de moneda.
 
-*[Tecnologías utilizadas](#tecnologías-utilizadas)
+<h2>:bowtie: Autor</h2>
 
-*[Personas Contribuyentes](#personas-contribuyentes)
+Adrian Fernandez :soon::soon: Autor.
 
-*[Personas-Desarrolladores del Proyecto](#personas-desarrolladores)
+<h2>Licencia MIT</h2>
 
-* [Licencia](#licencia)
 
-*[Conclusión](#conclusión)
+
