@@ -14,9 +14,9 @@ Características principales:
 
 El Conversor de Monedas es una herramienta útil para viajeros, inversores y cualquier persona que necesite realizar conversiones de moneda de forma regular. Con su interfaz simple y sus tasas de cambio actualizadas, simplifica el proceso de conversión de monedas y proporciona resultados precisos y confiables en todo momento.)
 
-*[Estado del proyecto](<h4 align="center">
+<h4 align="center">
 :construction: Proyecto en construcción :construction:
-</h4>)
+</h4>
 
 *[Características de la aplicación y demostración](#Características-de-la-aplicación-y-demostración)
 
